@@ -1,0 +1,56 @@
+// Selección por ID
+const titulo = document.getElementById('miTitulo');
+
+// Selección por clase
+const elementos = document.getElementsByClassName('miClase');
+
+console.log(titulo)
+
+console.log(elementos)
+
+let caja = document.getElementById('miCaja');
+let boton = document.getElementById("miBoton")
+
+let boton2 = document.getElementById("miBoton2")
+
+boton.addEventListener("click", function(){
+
+      caja.style.backgroundColor = "red";
+
+});
+
+boton2.addEventListener("click", function(){
+    caja.style.backgroundColor = "blue";
+
+});
+
+// document.addEventListener("keydown", function(evento){
+//     console.log("Tecla presionada:" + evento.key);
+// })
+
+
+// caja.addEventListener ("mouseover", function(){
+//     caja.style.backgroundColor = "red";
+// })
+
+let formulario = document.getElementById("miFormulario");
+
+formulario.addEventListener("submit", function(){
+    evento.preventDefault()
+    alert("Formulario enviado")
+})
+
+let boton4 = document.getElementById("nuevodiv")
+let boton5 = document.getElementById("borrardiv")
+
+boton4.addEventListener("click", function(){
+    const nuevoDiv = document.createElement('div');
+    nuevoDiv.textContent = 'Soy un nuevo DIV';
+    document.body.appendChild(nuevoDiv);
+});
+
+
+boton5.addEventListener("click", function(){
+    const elementoParaEliminar = document.querySelector('div');
+    elementoParaEliminar.remove();
+})
