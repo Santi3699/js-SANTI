@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="miCaja">
+        <h1 id="miTitulo">Titulo</h1>
+
+        <button id="miBoton2">Cambiar título</button>
+
+        <p class="miClase">Párrafo prueba 1</p>
+        <p class="miClase">Párrafo prueba 2</p>
+        <p class="miClase">Párrafo prueba 3</p>
+
+        <button id="miBoton">Evento</button>
+        <button id="nuevodiv">Crear Div</button>
+        <button id="borrardiv">Borrar Div</button>
+    </div>
+
+    <div id="form">
+    <form id="miFormulario" action="">
+            <input type="text" name="nombre" id="nombre">
+            <input type="submit" value="enviar">
+    </form>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
